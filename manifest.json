@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "name": "Integração aiqfome",
+  "description": "Debuiador de aiqfome",
+  "author": "Josias",
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Integração aiqfome",
+    "default_popup": "index.html",
+    "scripts": [
+      "popup.js"
+    ]
+  }
+}
