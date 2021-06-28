@@ -1,13 +1,13 @@
 const style = document.createElement('link')
-style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@latest/styles.css"
+style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@1.0.0/styles.css"
 style.rel = "stylesheet"
 document.head.appendChild(style)
 
 const script = document.createElement('script')
-script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@latest/inject.js?"
+script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@1.0.0/inject.js?"
 document.head.appendChild(script)
 
-debugger
+
 const container = document.createElement('div')
 container.innerHTML =
   `
