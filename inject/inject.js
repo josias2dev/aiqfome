@@ -41,8 +41,8 @@ const mogoInject = () => {
         geraldoWrapper.appendChild(categoriaWrapper)
       })
 
-      const buttonSave = document.querySelector('#mogo-inject .btn-salvar')
-      buttonSave.addEventListener('click', () => {
+      const buttonSaveMogo = document.querySelector('#mogo-inject .btn-salvar')
+      buttonSaveMogo.addEventListener('click', () => {
         __VUE_HOT_MAP__[componentId].instances[0].salvar()
       })
     } else {
