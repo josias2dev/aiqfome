@@ -1,4 +1,4 @@
-.mogo-button {
+#mogo-inject .mogo-button {
   position: fixed;
   top: 73px;
   right: 0px;
@@ -14,12 +14,12 @@
   z-index: 99999999;
 }
 
-.mogo-button svg {
+#mogo-inject .mogo-button svg {
   width: 100%;
   height: 100%;
 }
 
-.mogo main {
+#mogo-inject .mogo main {
   /*opacity: 0;*/
   /*pointer-events: none;*/
   position: absolute;
@@ -34,11 +34,11 @@
   padding: 50px;
 }
 
-.mogo-integration-categoria:not(:first-child) {
+#mogo-inject .mogo-integration-categoria:not(:first-child) {
   margin-top: 15px;
 }
 
-main svg{
+#mogo-inject main svg{
   position: absolute;
   right: 15px;
   top: 15px;
@@ -47,15 +47,24 @@ main svg{
   cursor: pointer;
 }
 
-main svg:hover{
+#mogo-inject main svg:hover{
   color: #ff304f;
 }
 
-.relative {
+#mogo-inject .relative {
   position: relative;
 }
 
-.mogo-hidden main{
+#mogo-inject .mogo-hidden main{
   opacity: 0;
   pointer-events: none;
+}
+
+
+#mogo-inject .flex{
+  display: flex;
+}
+
+#mogo-inject .geraldo, #mogo-inject .mogo{
+  flex: 1;
 }

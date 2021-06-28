@@ -1,7 +1,8 @@
 
 const mogoInject = () => {
   setTimeout(() => {
-    const main = document.querySelector('.mogo main')
+    const geraldoWrapper = document.querySelector('.mogo main .geraldo')    
+    const mogoWrapper = document.querySelector('.mogo main .geraldo')
 
     const buttonSave = document.querySelector('.btn-salvar')
 
@@ -37,7 +38,12 @@ const mogoInject = () => {
           itensWrapper.appendChild(itemWrapper)
         })
 
-        main.appendChild(categoriaWrapper)
+        geraldoWrapper.appendChild(categoriaWrapper)
+      })
+
+      const buttonSave = document.querySelector('#mogo-inject .btn-salvar')
+      buttonSave.addEventListener('click', () => {
+        __VUE_HOT_MAP__[componentId].instances[0].salvar()
       })
     } else {
       mogoInject()
