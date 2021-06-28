@@ -48,3 +48,4 @@ const mogoInject = () => {
     }
   }, 1000);
 }
+mogoInject()
