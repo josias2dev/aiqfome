@@ -1,11 +1,11 @@
 const style = document.createElement('link')
-style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.0/inject/styles.css"
+style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.2/inject/styles.css"
 style.rel = "stylesheet"
 document.head.appendChild(style)
 
 setTimeout(() => {
   const script = document.createElement('script')
-  script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.0/inject/inject.js"
+  script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.2/inject/inject.js"
   document.body.appendChild(script)
 }, 2000);
 
@@ -21,7 +21,11 @@ container.innerHTML =
       fill="#00D26E" />
   </svg>
 </div>
-<main></main>
+<main>
+  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.293031 1.29296C0.480558 1.10549 0.734866 1.00017 1.00003 1.00017C1.26519 1.00017 1.5195 1.10549 1.70703 1.29296L6.00003 5.58596L10.293 1.29296C10.3853 1.19745 10.4956 1.12127 10.6176 1.06886C10.7396 1.01645 10.8709 0.988862 11.0036 0.987709C11.1364 0.986555 11.2681 1.01186 11.391 1.06214C11.5139 1.11242 11.6255 1.18667 11.7194 1.28056C11.8133 1.37446 11.8876 1.48611 11.9379 1.60901C11.9881 1.7319 12.0134 1.86358 12.0123 1.99636C12.0111 2.12914 11.9835 2.26036 11.9311 2.38236C11.8787 2.50437 11.8025 2.61471 11.707 2.70696L7.41403 6.99996L11.707 11.293C11.8892 11.4816 11.99 11.7342 11.9877 11.9964C11.9854 12.2586 11.8803 12.5094 11.6948 12.6948C11.5094 12.8802 11.2586 12.9854 10.9964 12.9876C10.7342 12.9899 10.4816 12.8891 10.293 12.707L6.00003 8.41396L1.70703 12.707C1.51843 12.8891 1.26583 12.9899 1.00363 12.9876C0.741432 12.9854 0.49062 12.8802 0.305212 12.6948C0.119804 12.5094 0.0146347 12.2586 0.0123563 11.9964C0.0100779 11.7342 0.110873 11.4816 0.293031 11.293L4.58603 6.99996L0.293031 2.70696C0.10556 2.51943 0.000244141 2.26512 0.000244141 1.99996C0.000244141 1.73479 0.10556 1.48049 0.293031 1.29296Z" fill="currentColor"/>
+  </svg>
+</main>
 </div>
 `
 document.body.appendChild(container)

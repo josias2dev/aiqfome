@@ -19,7 +19,7 @@ categorias.forEach(categoria => {
   const categoriaWrapper = document.createElement('div')
   categoriaWrapper.classList = "mogo-integration-categoria"
   categoriaWrapper.innerHTML = `
-          <h1>${categoria.nome}</h1>
+          <h3>${categoria.nome}</h3>
           <div class="categoria-itens"></div>`
 
   const itensWrapper = categoriaWrapper.querySelector('.categoria-itens')
