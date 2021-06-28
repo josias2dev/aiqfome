@@ -1,11 +1,13 @@
 const style = document.createElement('link')
-style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@1.0.0/styles.css"
+style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.0/inject/styles.css"
 style.rel = "stylesheet"
 document.head.appendChild(style)
 
-const script = document.createElement('script')
-script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome/inject@1.0.0/inject.js?"
-document.head.appendChild(script)
+setTimeout(() => {
+  const script = document.createElement('script')
+  script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.0/inject/inject.js"
+  document.body.appendChild(script)
+}, 2000);
 
 
 const container = document.createElement('div')
