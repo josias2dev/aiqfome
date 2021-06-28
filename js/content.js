@@ -1,11 +1,11 @@
 const style = document.createElement('link')
-style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.4/inject/styles.css"
+style.href = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.5/inject/styles.css"
 style.rel = "stylesheet"
 document.head.appendChild(style)
 
 setTimeout(() => {
   const script = document.createElement('script')
-  script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.4/inject/inject.js"
+  script.src = "https://cdn.jsdelivr.net/gh/josias2dev/aiqfome@1.0.5/inject/inject.js"
   document.body.appendChild(script)
 }, 2000);
 
@@ -30,4 +30,7 @@ container.innerHTML =
 `
 document.body.appendChild(container)
 
-
+const closeButton = document.querySelector('main > svg')
+closeButton.addEventListener('click', () => {
+  container.classList.add('mogo-hidden')
+})

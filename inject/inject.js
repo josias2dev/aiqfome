@@ -5,11 +5,7 @@ const mogoInject = () => {
 
     const buttonSave = document.querySelector('.btn-salvar')
 
-    if (buttonSave) {
-      const closeButton = select('main > svg')
-      closeButton.addEventListener('click', () => {
-        main.classList.add('mogo-hidden')
-      })
+    if (buttonSave) {     
 
       const buttonAttributes = [...buttonSave.attributes];
 

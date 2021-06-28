@@ -55,7 +55,7 @@ main svg:hover{
   position: relative;
 }
 
-.mogo-hidden{
+.mogo-hidden main{
   opacity: 0;
   pointer-events: none;
 }
